@@ -17,6 +17,10 @@ $('#submitBtn').on("click", function() {
     var movieInput = $("#usr").val().trim();
     console.log(movieInput);
     // var for the imdb ajax call
+    queryMovie(movieInput);
+});
+
+function queryMovie(movieInput) {
     var queryURL = "http://www.omdbapi.com/?t=" + movieInput + "&y=&plot=short&apikey=40e9cece";
     //ajax call for amdb
     $.ajax({
@@ -55,8 +59,7 @@ $('#submitBtn').on("click", function() {
             }
         }
     });
-})
-
+}
 
 // $("#submitBtn").keyup(function(event) {
 //if (event.keyCode === 13) {
