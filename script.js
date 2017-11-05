@@ -15,9 +15,11 @@ var movie = $(this).attr("data-name");
 //onclick for function button
 $('#submitBtn').on("click", function() {
     var movieInput = $("#usr").val().trim();
-    console.log(movieInput);
-    // var for the imdb ajax call
-    queryMovie(movieInput);
+    if (movieInput.length > 0) {
+        console.log(movieInput);
+        // var for the imdb ajax call
+        queryMovie(movieInput);
+    }
 });
 
 function queryMovie(movieInput) {
