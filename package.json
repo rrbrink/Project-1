@@ -1,0 +1,26 @@
+{
+  "name": "project-1",
+  "version": "0.0.0",
+  "description": "demo",
+  "main": "script.js",
+  "dependencies": {},
+  "devDependencies": {
+    "http-server": "^0.10.0"
+  },
+  "scripts": {
+    "start": "http-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rrbrink/Project-1.git"
+  },
+  "author": "Ryan Brinkerhoff",
+  "contributors": [
+    "CJ Harries <cj@wizardsoftheweb.pro> (https://wizardsoftheweb.pro/)"
+  ],
+  "bugs": {
+    "url": "https://github.com/rrbrink/Project-1/issues"
+  },
+  "homepage": "https://github.com/rrbrink/Project-1#readme"
+}
