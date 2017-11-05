@@ -14,12 +14,10 @@ var movie = $(this).attr("data-name");
 
 //onclick for function button
 $('#submitBtn').on("click", function() {
-
-
-    var movieImput = $("#usr").val().trim();
-    console.log(movieImput);
+    var movieInput = $("#usr").val().trim();
+    console.log(movieInput);
     // var for the imdb ajax call
-    var queryURL = "http://www.omdbapi.com/?t=" + movieImput + "&y=&plot=short&apikey=40e9cece";
+    var queryURL = "http://www.omdbapi.com/?t=" + movieInput + "&y=&plot=short&apikey=40e9cece";
     //ajax call for amdb
     $.ajax({
         url: queryURL,
