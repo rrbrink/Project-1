@@ -23,7 +23,7 @@ $('#submitBtn').on("click", function() {
 });
 
 function queryMovie(movieInput) {
-    var queryURL = "http://www.omdbapi.com/?t=" + movieInput + "&y=&plot=short&apikey=40e9cece";
+    var queryURL = "http://www.omdbapi.com/?t=" + encodeURIComponent(movieInput) + "&y=&plot=short&apikey=40e9cece";
     //ajax call for amdb
     $.ajax({
         url: queryURL,
